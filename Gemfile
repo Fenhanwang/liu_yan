@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
-
-
+# install angular
+# gem 'angularjs-rails', '~> 1.5', '>= 1.5.5'
+gem "bower-rails", "~> 0.10.0"
+gem 'angular-rails-templates'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'mongoid', '~> 5.1.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
