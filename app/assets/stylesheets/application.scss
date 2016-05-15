@@ -1,0 +1,21 @@
+@import "angular-material/angular-material.scss";
+
+body{
+	background-image: image-url("bg-10-full.jpg")
+}
+
+main {
+	height: 100%;
+}
+
+#index-div {
+	height: 100%;
+}
+.index-button {
+	border-radius: 10px;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+}	
