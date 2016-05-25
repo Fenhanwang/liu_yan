@@ -5,7 +5,8 @@ app = angular.module('app', [
 	'ui.router',
 	'templates',
 	'ngAria',
-	'ngMaterial'
+	'ngMaterial',
+	'ngMessages'
 	// 'Devise',
   	// 'angularMoment',
   	// 'md.data.table'
@@ -21,7 +22,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
   	})
   	.state('post_gossip', {
   		url: "/post_gossip",
-  		templateUrl: 'post_gossip.html'
+  		templateUrl: 'post_gossip.html',
+  		controller: 'GossipCtrl'
   	});
   	$urlRouterProvider.otherwise('home');  
 });

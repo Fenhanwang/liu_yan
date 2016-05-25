@@ -19,6 +19,7 @@
 //= require angular-material
 //= require angular-animate
 //= require angular-aria
+//= require angular-messages
 
 //= require_tree ./angular
 //= require_tree ./templates

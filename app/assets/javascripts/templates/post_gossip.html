@@ -1,28 +1,34 @@
-<div layout="column" layout-align="center">
-	<div flex=30>
+<div layout="column" class="background-div">
+	<div flex=20>
 		<md-content  layout-gt-sm="row" layout-padding>
 		    <div flex>
 		      <md-input-container class="md-block">
 	          	<label>Title</label>
 	          	<input ng-model="doc.title">
 	          </md-input-container>
-			      <md-input-container>
-		        <label>Title</label>
-		        <input ng-model="doc.tag">
-		      </md-input-container>
+	          <md-chips ng-model="fruitNames" readonly="readonly"></md-chips>
+		          <!-- The chips below is searching -->
+			  <!-- <md-contact-chips
+		        ng-model="ctrl.asyncContacts"
+		        md-contacts="ctrl.delayedQuerySearch($query)"
+		        md-contact-name="name"
+		        md-contact-image="image"
+		        md-contact-email="email"
+		        md-require-match="true"
+		        md-highlight-flags="i"
+		        filter-selected="ctrl.filterSelected"
+		        placeholder="To">
+		    </md-contact-chips> -->
 		    </div>
 		</md-content>
 	</div>
-	<div flex=70 style="height: 100%;">
-		<div class="padded" md-whiteframe="1" flex=100 >
-	    	<md-content md-theme="docs-dark" layout-padding>
-				<div flex>
-					<md-input-container class="md-block">
-			          <label>Biography</label>
-			          <textarea ng-model="doc.biography" md-maxlength="2000" rows="50" md-select-on-focus></textarea>
-			        </md-input-container>
-				</div>
-			</md-content>
-	  	</div>
-	</div>
+	<md-content flex=75 md-theme="docs-dark" layout-padding>
+		<div flex>
+			<md-input-container class="md-block">
+	          <label>Detail</label>
+	          <textarea ng-model="doc.biography" md-maxlength="2000" rows="500" md-select-on-focus></textarea>
+	        </md-input-container>
+		</div>
+	</md-content>
+	<md-button flex="5" class="md-primary md-raised btn" ng-click="showListBottomSheet()">Show Config</md-button>
 </div>	
